@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>AK-Microfrontends Homepage</title>
+      <script>window.oc = window.oc || {}; oc.conf = oc.conf || {}; oc.conf.templates = (oc.conf.templates || []).concat([{ "type": "oc-template-jade", "version": "6.0.12", "externals": [{ "global": "jade", "url": "https://unpkg.com/jade-legacy@1.11.1/runtime.js", "name": "jade" }] }, { "type": "oc-template-handlebars", "version": "6.0.13", "externals": [{ "global": "Handlebars", "url": "https://unpkg.com/handlebars@4.0.11/dist/handlebars.runtime.min.js", "name": "handlebars" }] }, { "type": "oc-template-handlebars", "version": "6.0.13", "externals": [{ "global": "Handlebars", "url": "https://unpkg.com/handlebars@4.0.11/dist/handlebars.runtime.min.js", "name": "handlebars" }] }, { "type": "oc-template-react", "version": "2.0.8", "externals": [{ "global": "PropTypes", "url": "https://unpkg.com/prop-types@15.6.1/prop-types.min.js", "name": "prop-types" }, { "global": "React", "url": "https://unpkg.com/react@16.2.0/umd/react.production.min.js", "name": "react" }, { "global": "ReactDOM", "url": "https://unpkg.com/react-dom@16.2.0/umd/react-dom.production.min.js", "name": "react-dom" }] }]);</script>
+      <script src="//127.0.0.1:3030/oc-client/client.js"></script>
+    
+  </head>
+  <body>
+    <%- component1 %>
+    <%- component2 %>
+      <oc-component href="http://127.0.0.1:3030/header-react/1.0.0?name='Client side rendered'&bgcolor=red"/>
+  </body>
+</html>
